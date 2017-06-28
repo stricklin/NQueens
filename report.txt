@@ -1,0 +1,25 @@
+recursive nqueens algorithm:
+
+I will be representing the board as a list of intergers,
+the position of the integer represents which column the
+queen in placed in and the integer represents which row.
+
+This makes checking the rows and columns for threats
+easy. It's impossible to place queens in the same column
+and as long as there are no duplicate integers in the 
+list, no queens are in the same row.
+
+Checking the diagonals for threats is harder. This is 
+done by comparing the absolute value of the difference
+of the row numbers with the absolute value of the 
+difference of the column numbers. If they are equal,
+This means they threaten eachother on a diagonal.
+
+My program will generate all permutations of the list
+of integers from 0 to n-1 and remove those that have
+queens threatened on the diagonal.
+
+reference:
+http://algorithms.tutorialhorizon.com/backtracking-n-queens-problem-better-solution/
+
+
